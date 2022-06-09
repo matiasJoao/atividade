@@ -8,6 +8,6 @@ Sabendo que:
 Informe quem ficou em 1º, 2º e 3º lugar em cada disciplina.
 
 
-1- Platão
-2- Aristóteles
-3- Sócrates
+Química – 1ª Sócrates 2ª Aristóteles 3ª Platão
+Física – 1ª Aristóteles 2ª Platão 3ª Sócrates
+Matemática – 1ª Platão 2ª Sócrates 3ª Aristóteles
