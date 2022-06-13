@@ -1,0 +1,140 @@
+Elabore um algoritmo que possa descobrir, através de perguntas e respostas, qual meio de transporte o usuário está pensando.
+O usuário deverá escolher uma das seguintes opções:
+
+- Trator
+- Moto
+- Bicicleta
+- Trem
+- Carro
+- Caminhão
+- Ônibus
+- Paraquedas
+- Balão
+- Avião
+- Helicóptero
+- Submarino
+- Barco
+- Navio
+- Lancha
+
+Para chegar ao resultado, só devem ser usadas perguntas que retornem "Sim" ou "Não".
+
+Exemplo:
+É terrestre? Sim.
+Cabe apenas uma pessoa? Sim.
+É pesado? Não.
+Tem pedal? Sim.
+Então, o transporte escolhido foi a bicicleta.
+
+Para chegar ao resultado de cada uma das opções, use o modelo ilustrado na imagem em anexo
+
+
+
+
+var inteiro opcao;
+var caracter res;
+
+escreval("opcao 1 - terrestre
+opcao 2- aereo
+opcao 3- aquatico");
+escreva("digite apenas os numeros 1 2 ou 3 para escolher a opcao: ");
+leia(opcao);
+
+escolha (opcao)
+
+caso 1 faca
+    escreva("tem motor?(responda sim ou nao): ")
+    leia(res)
+    se(res = "sim") entao{
+        escreva("cabe mais de duas pessoas?(responda sim ou nao): ");
+        leia(res);
+            se(res = "sim")entao{
+                escreva("é usado como transporte publico?(responda sim ou nao): ");
+                leia(res);
+                    se(res = "sim"){
+                        escreva("Tem rodas?(responda sim ou nao): ");
+                        leia(res);
+                            se(res = "sim"){
+                                escreva("Então, o transporte escolhido foi o onibus.");
+                            };
+                            senao{
+                                escreva("Então, o transporte escolhido foi o Trem.");
+                            };
+                    };
+                    se(res = "nao")entao{
+                        escreva("é usado em construções?(responda sim ou nao): ");
+                        leia(res);
+                            se(res = "sim")entao{
+                                escreva("feito para escvações?(responda sim ou nao): ");
+                                leia(res);
+                                    se(res = "sim"){
+                                        escreva("Então, o transporte escolhido foi o trator.");
+                                    };
+                                    senao{
+                                        escreva("Então, o transporte escolhido foi o Caminhão.");
+                                    };
+                            };
+                            se(res = "nao")entao{
+                                escreva("Tem mais de duas rodas?(responda sim ou nao): ");
+                                leia(res);
+                                    se (res = "sim")entao{
+                                         escreva("Então, o transporte escolhido foi o Carro.");
+                                    }
+                                    senao{
+                                         escreva("Então, o transporte escolhido foi a Moto.");
+                                    };
+                            };
+                    };
+            };
+    };
+    senao {
+         escreva("Então, o transporte escolhido foi a Bicicleta.");
+    };
+caso 2 faca
+    escreva("tem motor a gasolina?(responda sim ou nao): ");
+    leia(res);
+        se (res = "sim")entao{
+            escreva("tem helice?(responda sim ou nao): ");
+            leia(res);
+                se(res ="sim")entao{
+                    escreva("Então, o transporte escolhido foi o Helicóptero.");
+                };
+                senao{
+                    escreva("Então, o transporte escolhido foi o Avião.");
+                };
+        };
+        se (res = "nao")entao{
+            escreva("Tem motor a gas?(responda sim ou nao): ");
+            leia(res);
+                se (res = "sim")entao{
+                    escreva("Então, o transporte escolhido foi o Balão.")
+                };
+                senao {
+                    escreva("Então, o transporte escolhido foi o Paraquedas.")
+                };
+        };
+caso 3 faca
+    escreva("Anda sobre a agua?(responda sim ou nao): ");
+    leia(res);
+        se(res = "sim")entao{
+            escreva("serve para transportar cargas valiosas?(responda sim ou nao): ");
+            leia(res);
+                se (res = "sim")entao{
+                     escreva("Então, o transporte escolhido foi o Navio.")
+                };
+                se (res = "nao"){
+                    escreva("é um transporte de luxo?");
+                    leia(res);
+                        se (res = "sim")entao{
+                            escreva("Então, o transporte escolhido foi a Lancha.");
+                        };
+                        senao{
+                            escreva("Então, o transporte escolhido foi o Barco.");
+                        };
+                };
+        };
+        senao{
+            escreva("Então, o transporte escolhido foi o Submarino.");
+        };
+outrocaso
+    escreva("escolha uma alternativa correta");
