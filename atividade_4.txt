@@ -1,0 +1,63 @@
+Elabore um algoritmo que representa um cadastro. Ele deve ler os seguintes dados fornecidos pelo usuário:
+
+- Nome
+- Endereço
+- Cidade
+- CPF
+- RG
+- Idade
+- Nome do pai
+- Nome da mãe
+- Peso
+- Renda bruta
+
+Apresente as informações solicitadas no final do cadastro.
+
+
+
+var caracter nome;
+var caracter endereco;
+var caracter cidade;
+var inteiro cidade;
+var inteiro cpf;
+var inteiro Rg;
+var inteiro idade;
+var caracter NomeDoPai;
+var caracter NomeDaMae;
+var real peso;
+var real RendaBruta;
+
+escreval("digite os seus dados")
+escreva("Nome: ")
+leia(nome)
+escreva("Endereço: ")
+leia(endereco)
+escreva("Cidade: ")
+leia(cidade)
+escreva("CPF: ")
+leia(cpf)
+escreva("RG: ")
+leia(Rg)
+escreva("Idade: ")
+leia(idade)
+escreva("Nome do Pai: ")
+leia(NomeDoPai)
+escreva("Nome da Mãe: ")
+leia(NomeDaMae)
+escreva("Peso: ")
+leia(peso)
+escreva("Renda Bruta: ")
+leia(RendaBruta)
+
+escreval("Suas informações:
+Nome: ", nome,
+"Endereço: ", endereco,
+"Cidade: ", cidade,
+"CPF: ", cpf,
+"RG: ", Rg,
+"Idade: ", idade,
+"Nome do Pai: ", NomeDoPai,
+"Nome da Mãe: ", NomeDaMae,
+"Peso: ", peso,
+"Renda Bruta: ", RendaBruta
+)
